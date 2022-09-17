@@ -8,10 +8,59 @@ body{
     font-family: sans-serif;
 }
 
+.container{
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+.container .content{
+    width: 50%;
+    background-color: #20dbfc;
+    position: relative;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.logo span{
+    color: #575656;
+    background-color: #fff;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.container .content img{
+    width: 100%;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 1rem;
+    left: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
 form{
     max-width: 400px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 3rem;
+    width: 50%;
 }
 
 form div{
@@ -23,6 +72,42 @@ form div{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+/* social icons */
+.or{
+    text-align: center;
+}
+
+.question {
+    font-size: 0.8rem;
+}
+
+span{
+    color: #20dbfc;
+    cursor: pointer;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn-1, .btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #c4c4c4;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+}
+
+.btn-1:hover, .btn-2:hover{
+    border-color: #20dbfc;
 }
 
 label{
@@ -85,4 +170,29 @@ button{
 
 button:hover{
     scale: 1.1;
+}
+
+
+/* media query */
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .content{
+        width: 100%;
+    }
+    
+    .container form{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        width: 100%;
+    }
 }

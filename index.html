@@ -10,8 +10,33 @@
 </head>
 <body>
     <div class="container">
+        <div class="content">
+            <div class="logo"><span>F</span>orm Validator</div>
+            <div class="image">
+                <img src="./illustration.png" alt="illustration">
+            </div>
+            <div class="text">Start for free</div>
+        </div>
         <form id="form">
             <div class="title">Sign Up</div>
+            <!-- social -->
+            <div class="social">
+                <div class="question">
+                    Already have an account? <br>
+                    <span>Sign In</span>
+                </div>
+                <div class="btn">
+                    <div class="btn-1">
+                        <img src="https://img.icons8.com/fluency/30/000000/google-logo.png"/>
+                        Sign Up
+                    </div>
+                    <div class="btn-2">
+                        <img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/>
+                        Sign Up
+                    </div>   
+                </div>
+                <div class="or">Or</div>
+            </div>
             <!-- /** 
                * ! username
              **/ -->
@@ -40,7 +65,7 @@
             <div>
                 <label for="password">Password</label>
                 <i class="fa-solid fa-lock"></i>
-                <input type="text" name="password" id="password" placeholder="*********">
+                <input type="password" name="password" id="password" placeholder="*********">
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <i class="fa-solid fa-thumbs-up success-icon"></i>
                 <div class="error"></div>
