@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with JS Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/73cff352a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="title">Sign Up</div>
+            <!-- /** 
+               * ! username
+             **/ -->
+            <div>
+                <label for="username">Username</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="jaffery110">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-thumbs-up success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <!-- /** 
+               * ! email
+             **/ -->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="jaffery@jafferytech.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-thumbs-up success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <!-- /** 
+               * ! password
+             **/ -->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="text" name="password" id="password" placeholder="*********">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-thumbs-up success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="./validator.js"></script>
+</body>
+</html>

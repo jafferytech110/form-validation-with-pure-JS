@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+form{
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+}
+
+form div{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+form div input{
+    width: 100%;
+    border-radius: 5px;
+    height: 2.5rem;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 2rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #575656;
+}
+
+input:focus{
+    border-color: #20dbfc ;
+}
+
+form div i {
+    position: absolute;
+    padding: 0.6rem;
+}
+
+.success-icon, .failure-icon{
+    right: 0;
+    opacity: 0;
+}
+
+.success-icon{
+    color: rgb(32, 129, 209);
+}
+
+.failure-icon{
+    color: red;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+button{
+    width: 100%;
+    margin-top: 1rem;
+    height: 3rem;
+    background-color: #20dbfc;
+    color: antiquewhite;
+    border: 2px solid #20dbfc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    scale: 1.1;
+}
